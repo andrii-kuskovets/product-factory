@@ -1,0 +1,20 @@
+.footer {
+    background-color: $white;
+    padding: 25px 0;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        order: 3;
+        font-size: 12px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.schedule {
+    &__title {
+        @include back-heading('Schedule');
+    }
+
+    &__status {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $mb-mobile;
+
+        img {
+            width: 40%;
+            padding: 0 5px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        width: 30%;
+        font-size: 12px;
+    }
+
+    &__dates {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $mb-mobile;
+        font-weight: 700;
+    }
+
+    &__register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__days-left {
+        font-weight: 700;
+        margin-bottom: $mb-mobile;
+    }
+}

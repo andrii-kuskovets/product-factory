@@ -1,0 +1,15 @@
+.form {
+    max-width: 550px;
+    margin-bottom: $mb-mobile;
+    
+
+    
+    &__input {
+        width: 100%;
+        background-color: rgba($grey2, 0.15);
+        border-radius: 16px;
+        border: none;
+        padding: 10px 15px;
+        color: $dark-grey2;
+    }
+}

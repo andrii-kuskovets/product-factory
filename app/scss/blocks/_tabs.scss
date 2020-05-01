@@ -1,0 +1,35 @@
+.tabs {
+    &__list-desktop {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    &__name {
+        font-size: 16px; //18
+        font-weight: 400;
+        text-align: center;
+        color: $black2;
+        padding: 10px 0; //18
+        border: 1px solid $black2;
+        border-radius: 16px;
+        margin-bottom: $mb-mobile;
+
+        &:hover {
+            background-color: $black2;
+            color: $white;
+        }
+    }
+
+    &__description {
+        display: none;
+        margin-bottom: $mb-mobile;
+    }
+
+    &__paragraph {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

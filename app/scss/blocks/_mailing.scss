@@ -1,0 +1,45 @@
+.mailing {
+    background-color: $black;
+    color: $white;
+
+    &__content {
+        padding-top: 25px;
+    }
+
+    &__subtitle {
+        color: $white;
+        font-size: 16px;
+        margin-bottom: $mb-mobile;
+    }
+
+    &__paragraph {
+        font-size: 12px;
+        margin-bottom: $mb-mobile;
+    }
+
+    &__img {
+        width: 275px;
+        margin: 0 auto;
+        position: relative;
+
+        &:after {
+            content: '';
+            background-image: url(../img/Union3.png);
+            background-position: center center;
+            background-size: auto;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__status {
+        display: none;
+        font-size: 12px;
+        margin-bottom: $mb-mobile;
+    }
+}
