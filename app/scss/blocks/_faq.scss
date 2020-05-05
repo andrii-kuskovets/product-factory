@@ -1,23 +1,37 @@
 .faq {
     margin-bottom: 20px;
 
-    &__title {
-        @include back-heading('FAQ');
-    }
-
     &__item {
         margin-bottom: $mb-mobile;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     &__subtitle {
+        width: 80%;
+
         &_active {
             margin-bottom: $mb-mobile;
         }
     }
 
+    &__icon {
+        width: 20px;
+        height: 20px;
+        transition: all 0.8s;
+        cursor: pointer;
+
+        &_active {
+            transform: rotate(135deg);
+        }
+    }
+
     &__paragraph {
         display: none;
-        font-size: 14px;
+        font-size: $standart;
         margin-bottom: $mb-mobile;
+        width: 100%;
     }
 }

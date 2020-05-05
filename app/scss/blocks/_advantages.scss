@@ -12,19 +12,14 @@
         z-index: -1;
     }
 
-    &__title {
-        @include back-heading('Course fee', 10%, auto);
-        
-
-        &:after {
-            font-size: 240%;
-        }
-    }
-
     &__description {
         padding-bottom: 15px;
         border-bottom: 1px solid $grey;
         margin-bottom: $mb-mobile;
+
+        @include respond-to(small) {
+            display: flex;
+        }
     }
 
     &__subtitle {
@@ -39,10 +34,23 @@
         color: #000000;
     }
 
+    &__list {
+
+        @include respond-to(small) {
+            width: 60%;
+        }
+    }
+
     &__card {
+        display: inline-block;
         text-align: center;
         color: $white;
 
+        @include respond-to(small) {
+            width: 40%;
+            align-self: flex-start;
+        }
+        
         .price {
             span {
                 display: block;
@@ -52,11 +60,11 @@
 
             &__old {
                 text-decoration: line-through;
-                font-size: 12px;
+                font-size: $standart;
             }
 
             &__new {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }

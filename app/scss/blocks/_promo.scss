@@ -13,11 +13,18 @@
     }
     
     &__title {
-        @include back-heading('UI / UX', 0, auto);
         display: none;
+
+        @include respond-to(small) {
+            display: block;
+        }
 
         &_mobile {
             display: block;
+
+            @include respond-to(small) {
+                display: none;
+            }
         }
 
         span {
@@ -28,15 +35,21 @@
 
     &__content {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+        @include respond-to(small) {
+            flex-direction: row;
+        }
     }
 
     &__description {
-        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: $mb-tablet;
     }
 
     &__img {
-        order: 1;
         margin-bottom: $mb-mobile;
     }
 

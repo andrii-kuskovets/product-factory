@@ -1,16 +1,17 @@
 .sessions {
     background-color: $white;
 
-    &__title {
-        @include back-heading('Sessions');
-    }
-
     .list {
         border-left: 2px solid  $grey;
 
         &__item {
             margin-bottom: $mb-mobile;
-            padding-left: 20px;
+            padding-left: 5px;
+
+            @include respond-to(small) {
+                margin-bottom: $mb-tablet;
+                padding-left: 10px;
+            }
         }
 
         &__heading {
@@ -20,49 +21,109 @@
             margin-bottom: $mb-mobile;
             position: relative;
 
+            @include respond-to(small) {
+                display: flex;
+                align-items: center;
+            }
+
             &:before {
                 content: '';
                 border-left: 4px solid $black;
                 position: absolute;
                 height: 100%;
                 top: 0;
-                left: -23px;
+                left: -8px;
                 border-radius: 26px;
+
+                @include respond-to(small) {
+                    left: -13px
+                }
+            }
+        }
+
+        &__title {
+
+            @include respond-to(small) {
+                width: calc(30% - 5px);
             }
         }
 
         &__info {
             display: none;
+
+            @include respond-to(small) {
+                display: flex;
+                width: 70%;
+            }
             
             &_mobile {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                font-size: 14px;
+                font-size: $standart;
                 margin-bottom: $mb-mobile;
+                margin: 0 auto;
+
+                @include respond-to(small) {
+                    display: none;
+                }
             }
         }
+
+        &__details {
+            margin-bottom: $mb-mobile;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            @include respond-to(small) {
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+        }
+
+        &__icon {
+            width: 14px;
+            height: 14px;
+                }
 
         &__description {
             display: flex;
             flex-direction: column;
+            text-align: justify;
+
+            @include respond-to(small) {
+                flex-direction: row;
+            }
         }
 
         &__img {
             display: flex;
+            justify-content: space-evenly;
             margin-bottom: $mb-mobile;
+
+            @include respond-to(small) {
+                width: 30%;
+                justify-content: flex-start;
+            }
         
             img {
-                width: 85px;
-            }
+                display: block;
+                max-width: 85px;
 
-            img+img {
-                margin-left: 25px;
+                @include respond-to(small) {
+                    margin-left: 15px;
+                }
             }
         }
 
         &__paragraph {
-            font-size: 12px;
+            font-size: $standart;
             margin-bottom: $mb-mobile;
+
+            @include respond-to(small) {
+                width: 70%;
+            }
         }
     }
 }

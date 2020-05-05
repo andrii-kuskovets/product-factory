@@ -1,0 +1,37 @@
+.social-networks {
+    display: flex;
+
+    &__item {
+        cursor: pointer;
+        
+        &+& {
+            margin-left: 10px;
+        }
+
+        &_vertical {
+            &+& {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+
+    &__icon {
+        width: 28px;
+        height: 28px;
+
+        &_white {
+            fill: $white;
+        }
+
+        &_small {
+            width: 18px;
+        height: 18px;
+        }
+    }
+
+    &_vertical {
+        flex-direction: column;
+    }
+}
