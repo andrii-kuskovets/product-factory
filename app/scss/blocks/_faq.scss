@@ -1,0 +1,23 @@
+.faq {
+    margin-bottom: 20px;
+
+    &__title {
+        @include back-heading('FAQ');
+    }
+
+    &__item {
+        margin-bottom: $mb-mobile;
+    }
+
+    &__subtitle {
+        &_active {
+            margin-bottom: $mb-mobile;
+        }
+    }
+
+    &__paragraph {
+        display: none;
+        font-size: 14px;
+        margin-bottom: $mb-mobile;
+    }
+}

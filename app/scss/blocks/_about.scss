@@ -1,0 +1,18 @@
+.about {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        margin-bottom: $mb-mobile;
+    }
+
+    &__title {
+        @include back-heading('About');
+    }
+
+    &__hide {
+        display: none;
+    }
+}
