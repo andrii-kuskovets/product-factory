@@ -1,45 +1,88 @@
 .mailing {
     background-color: $black;
     color: $white;
-
+    
     &__content {
-        padding-top: 25px;
+        position: relative;
+        padding-top: 30px;
+
+        @include respond-to(small) {
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &:after {
+            content: '';
+            background: url(../img/Union3.png) center (top / cover) no-repeat;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+                
+            @include respond-to(small) {
+                height: 100%;
+                width: 50%;
+                right: -2%;
+                top: -5%;
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond-to(small) {
+            width: 50%;
+        }
     }
 
     &__subtitle {
         color: $white;
         font-size: 16px;
         margin-bottom: $mb-mobile;
+
+        @include respond-to(small) {
+            font-size: 20px;
+            margin-bottom: $mb-tablet;
+        }
     }
 
     &__paragraph {
-        font-size: 12px;
+        font-size: $standart;
         margin-bottom: $mb-mobile;
+
+        @include respond-to(small) {
+            width: 80%;
+            margin-bottom: $mb-tablet;
+        }
     }
 
     &__img {
         width: 275px;
         margin: 0 auto;
         position: relative;
+                
+        @include respond-to(small) {
+            width: 50%;
+        }
 
-        &:after {
-            content: '';
-            background-image: url(../img/Union3.png);
-            background-position: center center;
-            background-size: auto;
-            background-repeat: no-repeat;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translateX(-50%);
+        img {
+            display: block;
+            width: 20%;
+            margin: 0 auto;
+
+            @include respond-to(small) {
+                margin-left: 45%;
+            }
         }
     }
 
     &__status {
         display: none;
-        font-size: 12px;
+        font-size: $standart;
         margin-bottom: $mb-mobile;
     }
 }

@@ -2,6 +2,10 @@
     max-width: 550px;
     margin-bottom: $mb-mobile;
     
+    @include respond-to(small) {
+        width: 80%;
+        margin-bottom: $mb-tablet;
+    }
 
     
     &__input {
