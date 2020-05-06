@@ -51,7 +51,7 @@
     }
 
     &__paragraph {
-        font-size: $standart;
+        font-size: $font-sm;
         margin-bottom: $mb-mobile;
 
         @include respond-to(small) {
@@ -82,7 +82,7 @@
 
     &__status {
         display: none;
-        font-size: $standart;
+        font-size: $font-sm;
         margin-bottom: $mb-mobile;
     }
 }

@@ -55,7 +55,7 @@
     }
 
     &__paragraph {
-        font-size: $standart;
+        font-size: $font-sm;
         margin-bottom: $mb-mobile;
 
         @include respond-to(small) {

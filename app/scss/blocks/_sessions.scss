@@ -60,7 +60,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                font-size: $standart;
+                font-size: $font-sm;
                 margin-bottom: $mb-mobile;
                 margin: 0 auto;
 
@@ -72,13 +72,16 @@
 
         &__details {
             margin-bottom: $mb-mobile;
-            cursor: pointer;
             display: flex;
             align-items: center;
 
             @include respond-to(small) {
                 margin-bottom: 0;
                 margin-right: 30px;
+            }
+
+            &_cursor {
+                cursor: pointer;
             }
         }
 
@@ -118,7 +121,7 @@
         }
 
         &__paragraph {
-            font-size: $standart;
+            font-size: $font-sm;
             margin-bottom: $mb-mobile;
 
             @include respond-to(small) {
