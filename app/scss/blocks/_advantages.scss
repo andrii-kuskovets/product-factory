@@ -78,6 +78,7 @@
 
             &__old {
                 text-decoration: line-through;
+<<<<<<< HEAD
                 font-size: $standart;
 
                 @include respond-to(medium) {
@@ -87,6 +88,9 @@
                 @include respond-to(large) {
                     font-size: 25px;
                 }
+=======
+                font-size: $font-sm;
+>>>>>>> dev
             }
 
             &__new {

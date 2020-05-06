@@ -34,7 +34,7 @@
 
     &__subtitle {
         font-weight: 700;
-        font-size: $standart;
+        font-size: $font-sm;
 
         @include respond-to(small) {
             font-size: 16px;

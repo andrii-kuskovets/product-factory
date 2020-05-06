@@ -60,7 +60,7 @@
     }
 
     &__paragraph {
-        font-size: $standart;
+        font-size: $font-sm;
         margin-bottom: $mb-mobile;
         line-height: 2;
 
@@ -107,7 +107,7 @@
 
     &__status {
         display: none;
-        font-size: $standart;
+        font-size: $font-sm;
         margin-bottom: $mb-mobile;
     }
 }
