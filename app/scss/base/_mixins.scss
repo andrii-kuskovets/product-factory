@@ -20,33 +20,33 @@ $breakpoints: (
     }
 }
 
-@mixin  back-heading($content, $bottom: auto, $top: 0) {
-    &:after {
-        content: $content;
-        color: $black;
-        opacity: 0.05;
-        -webkit-text-stroke: 6px $black;
-        font-size: 340%;
-        color: $black;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        top: $top;
-        bottom: $bottom;
+@mixin button-variant($color, $background, $border, $font-weight) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    font-weight: $font-weight;
+
+    &:focus {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+    }
+
+    &:hover {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
     }
 }
 
-// @mixin pseudo {
-//     content: '';
-//     display: block;
-//     position: absolute;
-// }
+  // Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius, $width) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    width: $width;
+}
 
-// @mixin bg-img ($bg-url) {
-//     background-image: $bg-url;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+
+
 

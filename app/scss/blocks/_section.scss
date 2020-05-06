@@ -1,7 +1,6 @@
 .section {
     padding-bottom: 30px;
-    margin-bottom: 20px;
-
+    
     &__title {
         position: relative;
         font-size: 20px;
@@ -12,14 +11,30 @@
         text-align: center;
         margin-bottom: $mb-mobile;
 
+        @include respond-to(small) {
+            font-size: 25px;
+            padding-bottom: 30px;
+            margin-bottom: $mb-tablet;
+        }
+
         &_hero {
             font-size: 22px;
             text-align: left;
 
-            span {
-                color: $dark-grey;
-                font-size: 20px;
+            @include respond-to(small) {
+                font-size: 28px;
+                padding-bottom: 40px;
             }
+    
+        }
+    }
+
+    &__subtitle {
+        color: $dark-grey;
+        font-size: 20px;
+
+        @include respond-to(small) {
+            font-size: 23px;
         }
     }
 
@@ -29,5 +44,31 @@
         line-height: 1.4;
         color: $black;
         margin-bottom: $mb-mobile;
+
+        @include respond-to(small) {
+            margin-bottom: $mb-tablet;
+        }
+    }
+
+    &__back-title {
+        color: $black;
+        opacity: 0.05;
+        -webkit-text-stroke: 6px $black;
+        font-size: 340%;
+        color: $black;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        bottom: 0;
+
+        &_small {
+            font-size: 240%;
+            bottom: 10%;
+
+            @include respond-to(small) {
+                font-size: 300%;
+            }
+        }
     }
 }

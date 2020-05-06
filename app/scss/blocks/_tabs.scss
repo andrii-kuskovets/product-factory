@@ -3,19 +3,30 @@
         display: none;
     }
 
+    
+    &__items {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     img {
         display: none;
     }
 
     &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-size: 16px; //18
         font-weight: 400;
         text-align: center;
         color: $black2;
-        padding: 10px 0; //18
+        padding: 10px 15px; //18
         border: 1px solid $black2;
         border-radius: 16px;
         margin-bottom: $mb-mobile;
+        cursor: pointer;
 
         &:hover {
             background-color: $black2;
@@ -29,7 +40,18 @@
     }
 
     &__paragraph {
-        font-size: 14px;
+        font-size: $font-sm;
         font-weight: 400;
+    }
+
+    &__icon {
+        width: 10px;
+        height: 10px;
+        transform: rotate(90deg);
+        transition: all 0.8s;
+
+        &_active {
+            transform: rotate(-90deg);
+        }
     }
 }

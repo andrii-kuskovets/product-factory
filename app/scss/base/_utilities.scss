@@ -4,6 +4,11 @@
         border-radius: 30px;
         box-shadow: 50px 50px 99px 0 rgba(34, 34, 34, 0.06);
         padding: 25px;
+        position: relative;
+
+        @include respond-to(small) {
+            padding: 50px;
+        }
     }
 
     &-xs {
@@ -11,6 +16,10 @@
         border-radius: 26px;
         box-shadow: 10px 10px 99px 0 rgba(211, 211, 211, 0.16);
         padding: 10px;
+
+        @include respond-to(small) {
+            padding: 20px;
+        }
     }
 
     &-black {

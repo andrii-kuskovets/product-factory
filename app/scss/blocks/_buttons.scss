@@ -1,34 +1,40 @@
 .btn {
     background-color: transparent;
-    border: none;
-    font-weight: 700;
-    color: $white;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 2px solid transparent;
+    line-height: 1;
 
     &__main {
-        border-radius: 16px;
-        background-color: $orange;
-        font-size: 18px; //24
-        padding: 10px 0; //15
-
+        @include button-size(10px, 0, 18px, 16px, 200px);
+        @include button-variant($white, $orange, transparent, 700);
+        
         &_xs {
-            width: 120px; //196
-            font-size: 14px;//16
+            @include button-size(8px, 0, 14px, 10px, 120px);
         }
 
         &_md {
-            width: 170px; //266
-        }
-
-        &_lg {
-            width: 200px; //for desktop 390
+            @include button-size(9px, 0, 16px, 14px, 170px);
         }
     }
 
     &__secondary {
-        border-radius: 31px;
-        background-color: rgba($white, .1);
-        font-size: 16px; //19
-        font-weight: 400;
-        padding: 10px 15px;
+        @include button-size(10px, 15px, 16px, 30px, auto);
+        @include button-variant($white, rgba($white, .1), transparent, 400);
+    }
+
+    &__arrow {
+        @include button-size(15px, 20px, 0, 16px, auto);
+        @include button-variant($white, $white, $black, 400);
+    }
+
+    &__icon {
+        width: 10px;
+        height: 19px;
     }
 }
