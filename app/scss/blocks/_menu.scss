@@ -13,6 +13,14 @@
         transition-delay: .1s;
         z-index: 1;
         border-radius: 0 0 100% 0;
+
+        @include respond-to(medium) {
+            background-color: transparent;
+            position: relative;
+            margin-top: 0;
+            transform: translateX(0);
+            height: 100%;
+        }
         
         &_active {
             transform: translateX(0);
@@ -26,6 +34,19 @@
             text-transform: uppercase;
             text-decoration: none;
             z-index: 1;
+
+            @include respond-to(medium) {
+                padding: 0;
+                text-transform: none;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__list {
+        @include respond-to(medium) {
+            display: flex;
+            justify-content: space-around;
         }
     }
 
@@ -74,5 +95,9 @@
                 transform: translateY(-9px) rotate(45deg);
             }
         }
+    }
+
+    @include respond-to(medium) {
+        display: none;
     }
 }

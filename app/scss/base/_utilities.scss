@@ -9,6 +9,10 @@
         @include respond-to(small) {
             padding: 50px;
         }
+
+        @include respond-to(medium) {
+            padding: 50px 76px;
+        }
     }
 
     &-xs {
@@ -19,6 +23,14 @@
 
         @include respond-to(small) {
             padding: 20px;
+        }
+
+        @include respond-to(medium) {
+            padding: 35px;
+        }
+
+        @include respond-to(large) {
+            padding: 50px;
         }
     }
 
