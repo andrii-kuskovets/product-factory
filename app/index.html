@@ -21,25 +21,25 @@
                     <nav class="menu__nav">
                         <ul class="menu__list">
                             <li class="menu__element">
-                                <a class="menu__link" href="#">Projects</a>
+                                <a class="menu__link" href="#projects">Projects</a>
                             </li>
                             <li class='menu__element'>
-                                <a class='menu__link' href="#">Partners</a>
+                                <a class='menu__link' href="#avdantages">Partners</a>
                             </li>
                             <li class="menu__element">
-                                <a class='menu__link' href="#">FAQ</a>
+                                <a class='menu__link' href="#faq">FAQ</a>
                             </li>
                             <li class="menu__element">
-                                <a class="menu__link" href="#">Masters</a>
+                                <a class="menu__link" href="#masters">Masters</a>
                             </li>
                             <li class="menu__element">
-                                <a class="menu__link" href="#">Classes</a>
+                                <a class="menu__link" href="#sessions">Classes</a>
                             </li>
                             <li class="menu__element">
-                                <a class="menu__link" href="#">Course Experience</a>
+                                <a class="menu__link" href="#experience">Course Experience</a>
                             </li>
                             <li class="menu__element">
-                                <a class="menu__link" href="#">About us</a>
+                                <a class="menu__link" href="#about">About us</a>
                             </li>
                         </ul>
                     </nav>
@@ -77,37 +77,46 @@
                         <span class="section__subtitle">Product Factory</span>
                         <span class="section__back-title">UI / UX</span>
                     </h1>
-                    <img src="img/Group 924@2x.png" alt="Product factory">
+                    <img src="img/promo.png" alt="factory">
                 </div>
             </div>
         </div>
     </section>
-    <section class="about section">
+    <section class="about section" id="about">
         <div class="container br-lg">
             <div class="section__heading about__content">
-                <div class="about__img">
-                    <img src="img/Group 826.png" alt="card">
+                <div class="about__imgs">
+                    <div class="about__img">
+                        <img src="img/card.png" alt="card">
+                        <img src="img/Adweek.gif" alt="gif" class="about__back-img">
+                    </div>
                 </div>
                 <h2 class="section__title about__title">
                     About us
                     <span class="section__back-title">About</span>
                 </h2>
                 <ul class="social-networks social-networks_vertical">
-                    <a class="social-networks__item social-networks__item_vertical">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#facebook'></use>
-                        </svg>
-                    </a>
-                    <a class="social-networks__item social-networks__item_vertical">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#twitter'></use>
-                        </svg>
-                    </a>
-                    <a class="social-networks__item social-networks__item_vertical">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#instagram'></use>
-                        </svg>
-                    </a>
+                    <li class="social-networks__item social-networks__item_vertical"> 
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#facebook'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks__item social-networks__item_vertical">
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#twitter'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks__item social-networks__item_vertical">
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#instagram'></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
                 <p class="section__paragraph about__paragraph">
                     Today, given the economic and labor market conditions, the best and least risky way to invest is to invest in personal assets and skills.
@@ -118,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="experience section">
+    <section class="experience section" id="experience">
         <div class="container br-lg">
             <div class="experience__content">
                 <div class="section__heading">
@@ -127,23 +136,23 @@
                         <span class="section__back-title section__back-title_small">Experience</span>
                     </h2>
                 </div>
-                <img class="experience__img" src="img/Group 468.png" alt="banner">
+                <img class="experience__img" src="img/banner.png" alt="banner">
                 <div class="experience__tabs tabs">
+                    <ul class="tabs__list-desktop js_tab-list-desktop">
+                        <li class="tabs__name tabs__name_active"><span>After attending the course</span></li>
+                        <li class="tabs__name"><span>During the period</span></li>
+                        <li class="tabs__name"><span>Before attending the course</span></li>
+                    </ul>
                     <ul class="tabs__items">
-                        <ul class="tabs__list-desktop js_tab-list-desktop">
-                            <li class="tabs__name tabs__name_active"><span>After attending the course</span></li>
-                            <li class="tabs__name"><span>During the period</span></li>
-                            <li class="tabs__name"><span>Before attending the course</span></li>
-                        </ul>
-                        <div class="tabs__item tabs__item_active">
-                            <li class="tabs__name js_tab-title">
+                        <li class="tabs__item tabs__item_active">
+                            <div class="tabs__name js_tab-title">
                                 <span>After attending the course</span>
                                 <svg class="tabs__icon">
                                     <use xlink:href='#arrow'></use>
                                 </svg>
-                            </li>
+                            </div>
                             <div class="tabs__description tabs__description_active js_tabs__description-mobile">
-                                <img src="img/Group 468.png" alt="banner">
+                                <img src="img/banner.png" alt="banner">
                                 <p class="tabs__paragraph">
                                     This course has been attempted by zero people who are eager to learn product design, 
                                     especially user experience and user interface, so it is not a prerequisite, but due 
@@ -153,31 +162,31 @@
                                     as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy, 
                                 </p>
                             </div>
-                        </div>
-                        <div class="tabs__item">
-                            <li class="tabs__name js_tab-title">
+                        </li>
+                        <li class="tabs__item">
+                            <div class="tabs__name js_tab-title">
                                 <span>During the period</span>
                                 <svg class="tabs__icon">
                                     <use xlink:href='#arrow'></use>
                                 </svg>
-                            </li>
+                            </div>
                             <div class="tabs__description js_tabs__description-mobile">
-                                <img src="img/Group 468.png" alt="banner">
+                                <img src="img/banner.png" alt="banner">
                                 <p class="tabs__paragraph">
                                     Obviously, the ability to use tools like Adobe Photoshop and Adobe Illustrator as well 
                                     as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy, 
                                 </p>
                             </div>
-                        </div>
-                        <div class="tabs__item">
-                            <li class="tabs__name js_tab-title">
+                        </li>
+                        <li class="tabs__item">
+                            <div class="tabs__name js_tab-title">
                                 <span>Before attending the course</span>
                                 <svg class="tabs__icon">
                                     <use xlink:href='#arrow'></use>
                                 </svg>
-                            </li>
+                            </div>
                             <div class="tabs__description js_tabs__description-mobile">
-                                <img src="img/Group 468.png" alt="banner">
+                                <img src="img/banner.png" alt="banner">
                                 <p class="tabs__paragraph">
                                     This course has been attempted by zero people who are eager to learn product design, 
                                     especially user experience and user interface, so it is not a prerequisite, but due 
@@ -185,13 +194,13 @@
                                     as Microsoft Word, Excel tools, and of course a lot of enthusiasm and energy, 
                                 </p>
                             </div>
-                        </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sessions section">
+    <section class="sessions section" id="sessions">
         <div class="container">
             <div class="section__heading">
                 <h2 class="section__title sessions__title">
@@ -561,7 +570,7 @@
                     </div>
                     <div class="list__description">
                         <div class="list__img">
-                            <img src="img/photo_2018-11-05_23-52-41.png" alt="master">
+                            <img src="img/photo.png" alt="master">
                         </div>
                         <div class="list__info list__info_mobile">
                             <div class="list__details">
@@ -764,7 +773,7 @@
             </ul>
         </div>
     </section>
-    <section class="masters section">
+    <section class="masters section" id="masters">
         <div class="container br-lg">
             <div class="masters__content">
                 <div class="section__heading">
@@ -779,21 +788,27 @@
                             <img src="img/72676.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link social-networks__item_vertical" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -808,24 +823,30 @@
                     </li>
                     <li class="masters__item">
                         <div class="masters__photo">
-                            <img src="img/photo_2018-11-05_23-52-41.png" alt="master">
+                            <img src="img/photo.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -843,21 +864,27 @@
                             <img src="img/4444444.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -875,21 +902,27 @@
                             <img src="img/111.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -907,21 +940,27 @@
                             <img src="img/222.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -939,21 +978,27 @@
                             <img src="img/7272.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -971,21 +1016,27 @@
                             <img src="img/hasan1.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -1003,21 +1054,27 @@
                             <img src="img/22222.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -1035,21 +1092,27 @@
                             <img src="img/2676.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -1067,21 +1130,27 @@
                             <img src="img/23423.png" alt="master">
                             <div class="masters__info">
                                 <ul class="social-networks">
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#facebook'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#twitter'></use>
-                                        </svg>
-                                    </a>
-                                    <a class="social-networks__item">
-                                        <svg class="social-networks__icon social-networks__icon_white">
-                                            <use xlink:href='#instagram'></use>
-                                        </svg>
-                                    </a>
+                                    <li class="social-networks__item"> 
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-networks__item">
+                                        <a class="social-networks__link" href="#">
+                                            <svg class="social-networks__icon social-networks__icon_white">
+                                                <use xlink:href='#instagram'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <div class="masters__about">
                                     <svg class="social-networks__icon">
@@ -1098,7 +1167,7 @@
             </div>
         </div>
     </section>
-    <section class="faq section">
+    <section class="faq section" id="faq">
         <div class="container">
             <div class="section__heading">
                 <h2 class="section__title faq__title">
@@ -1165,7 +1234,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages section">
+    <section class="advantages section" id="avdantages">
         <div class="container br-lg">
             <div class="advantages__content">
                 <div class="section__heading">
@@ -1239,12 +1308,12 @@
                     <span class="mailing__status">Your email has been successfully registered, headlines will be sent to you soon.</span>
                 </div>
                 <div class="mailing__img">
-                    <img src="img/Union 4.png"alt="mail">
+                    <img src="img/Union.png" alt="mail">
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects section">
+    <section class="projects section" id="projects">
         <div class="container">
             <div class="section__heading">
                 <h2 class="section__title projects__title">
@@ -1289,7 +1358,7 @@
                         </div>
                         <div class="slider__imgs">
                             <div class="slider__img">
-                                <img src="img/yejing1_png by Tian.jpg" alt="travel">
+                                <img src="img/Tian.jpg" alt="travel">
                             </div>
                             <div class="slider__buttons">
                                 <button class="btn btn__arrow btn_next js-btn_next">
@@ -1341,21 +1410,27 @@
         <div class="container">
             <div class="footer__content">
                 <ul class="social-networks">
-                    <a class="social-networks__item">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#facebook'></use>
-                        </svg>
-                    </a>
-                    <a class="social-networks__item">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#twitter'></use>
-                        </svg>
-                    </a>
-                    <a class="social-networks__item">
-                        <svg class="social-networks__icon social-networks__icon_small">
-                            <use xlink:href='#instagram'></use>
-                        </svg>
-                    </a>
+                    <li class="social-networks__item"> 
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#facebook'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#twitter'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="#">
+                            <svg class="social-networks__icon social-networks__icon_small">
+                                <use xlink:href='#instagram'></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
                 <div class="logo">
                     <a href="/">
@@ -1365,8 +1440,8 @@
                     </a>
                 </div>
                 <div class="footer__phone">
-                    <span>Contact Number:</span>
-                    <a href="tel:09121234567">0912-1234567</a>
+                    <span>Contact Number: </span>
+                    <a href="tel:09121234567"> 0912-1234567</a>
                 </div>
             </div>
         </div>
@@ -1406,7 +1481,7 @@
             </g>
         </symbol>
         <symbol id='arrow' viewBox="0 0 12.087 22.173"> 
-            <path id="Path_489" data-name="Path 489" d="M-13023.766-9424.152l9.672,9.672-9.672,9.673" transform="translate(13025.18 9425.566)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path id="Path_489" data-name="Path 489" d="M-13023.766-9424.152l9.672,9.672-9.672,9.673" transform="translate(13025.18 9425.566)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         </symbol>
         <symbol id='more' viewBox="0 0 19.109 15.971">
             <g id="Group_823" data-name="Group 823" transform="translate(1 1)">
