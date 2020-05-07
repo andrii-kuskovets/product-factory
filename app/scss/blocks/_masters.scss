@@ -102,6 +102,13 @@
         border-radius: 9px;
         padding: 8px;
 
+        &:hover {
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
         @include respond-to(x-large) {
             padding: 12px 14px;
         }

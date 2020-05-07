@@ -122,7 +122,13 @@
         &__icon {
             width: 14px;
             height: 14px;
-                }
+
+            @include respond-to(medium) {
+                width: 22px;
+                height: 22px;
+                margin-top: 0;
+            }
+        }
 
         &__description {
             display: flex;

@@ -7,7 +7,7 @@
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 0;
     line-height: 1;
 
     &__main {
@@ -45,22 +45,24 @@
     }
 
     &__secondary {
-        @include button-size(10px, 15px, 16px, 30px, auto);
+        @include button-size(10px, 15px, 16px, 30px, 150px);
         @include button-variant($white, rgba($white, .1), transparent, 400);
 
         @include respond-to(large) {
             font-size: 19px;
-            padding: 13px 40px;
+            padding: 13px 0;
         }
     }
 
     &__arrow {
         @include button-size(15px, 20px, 0, 16px, auto);
         @include button-variant($white, $white, $black, 400);
+        border: 2px solid $black;
     }
 
     &__icon {
         width: 10px;
         height: 19px;
+        stroke: $black;
     }
 }
