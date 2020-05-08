@@ -25,26 +25,42 @@ $breakpoints: (
     background-color: $background;
     border-color: $border;
     font-weight: $font-weight;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
 
-    &:focus {
-        color: $color;
-        background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: darken($background, 25%);
+        transform: scaleX(0);
+        transform-origin: 50% 0;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
     }
 
-    &:hover {
-        color: $color;
-        background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
-    }
+    &:hover,
+	&:focus,
+	&:active {
+        
+		&:before {
+			transform: scaleX(1);
+		}
+	}
 }
 
   // Button sizes
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius, $width) {
     padding: $padding-vertical $padding-horizontal;
     font-size: $font-size;
-    border-radius: $border-radius;
     width: $width;
+    border-radius: $border-radius;
 }
 
 

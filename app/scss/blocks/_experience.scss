@@ -11,6 +11,12 @@
         position: absolute;
         z-index: -1;
     }
+
+    &__title {
+        @include respond-to(large) {
+            margin-bottom: 65px;
+        }
+    }
     
     &__img {
         display: block;
@@ -20,6 +26,10 @@
 
         @include respond-to(small) {
             width: 25%;
+        }
+
+        @include respond-to(medium) {
+            display: none;
         }
     }
 
@@ -44,6 +54,15 @@
 
         @include respond-to(small) {
             width: 70%;
+        }
+
+        @include respond-to(medium) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        @include respond-to(large) {
+            margin-bottom: 62px;
         }
     }
 }

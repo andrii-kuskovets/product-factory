@@ -1,6 +1,12 @@
 .sessions {
     background-color: $white;
 
+    &__title {
+        @include respond-to(large) {
+            margin-bottom: 125px;
+        }
+    }
+
     .list {
         border-left: 2px solid  $grey;
 
@@ -11,6 +17,16 @@
             @include respond-to(small) {
                 margin-bottom: $mb-tablet;
                 padding-left: 10px;
+            }
+
+            @include respond-to(medium) {
+                margin-bottom: $mb-desktop;
+                padding-left: 15px;
+            }
+
+            @include respond-to(large) {
+                margin-bottom: 50px;
+                padding-left: 20px;
             }
         }
 
@@ -24,6 +40,12 @@
             @include respond-to(small) {
                 display: flex;
                 align-items: center;
+                margin-bottom: $mb-tablet;
+            }
+
+            @include respond-to(medium) {
+                padding: 10px 25px;
+                margin-bottom: $mb-desktop;
             }
 
             &:before {
@@ -37,6 +59,14 @@
 
                 @include respond-to(small) {
                     left: -13px
+                }
+
+                @include respond-to(medium) {
+                    left: -18px
+                }
+
+                @include respond-to(large) {
+                    padding-left: -23px;
                 }
             }
         }
@@ -53,7 +83,8 @@
 
             @include respond-to(small) {
                 display: flex;
-                width: 70%;
+                width: 65%;
+                justify-content: space-between;
             }
             
             &_mobile {
@@ -77,7 +108,10 @@
 
             @include respond-to(small) {
                 margin-bottom: 0;
-                margin-right: 30px;
+            }
+
+            @include respond-to(medium) {
+                font-size: 19px;
             }
 
             &_cursor {
@@ -88,7 +122,13 @@
         &__icon {
             width: 14px;
             height: 14px;
-                }
+
+            @include respond-to(medium) {
+                width: 22px;
+                height: 22px;
+                margin-top: 0;
+            }
+        }
 
         &__description {
             display: flex;
@@ -97,6 +137,7 @@
 
             @include respond-to(small) {
                 flex-direction: row;
+                align-items: flex-start;
             }
         }
 
@@ -108,14 +149,23 @@
             @include respond-to(small) {
                 width: 30%;
                 justify-content: flex-start;
+                margin-bottom: 0;
+            }
+
+            @include respond-to(medium) {
+                margin-top: 10px;
             }
         
             img {
                 display: block;
                 max-width: 85px;
-
+                
                 @include respond-to(small) {
                     margin-left: 15px;
+                }
+
+                @include respond-to(medium) {
+                    margin-left: 25px;
                 }
             }
         }
@@ -126,6 +176,11 @@
 
             @include respond-to(small) {
                 width: 70%;
+            }
+
+            @include respond-to(medium) {
+                font-size: 16px;
+                line-height: 2.13;
             }
         }
     }

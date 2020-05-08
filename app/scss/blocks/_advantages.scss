@@ -12,6 +12,12 @@
         z-index: -1;
     }
 
+    &__title {
+        @include respond-to(large) {
+            margin-bottom: 73px;
+        }
+    }
+
     &__description {
         padding-bottom: 15px;
         border-bottom: 1px solid $grey;
@@ -24,6 +30,14 @@
 
     &__subtitle {
         margin-bottom: $mb-mobile;
+
+        @include respond-to(small) {
+            margin-bottom: $mb-tablet;
+        }
+
+        @include respond-to(medium) {
+            margin-bottom: $mb-desktop;
+        }
     }
 
     &__subtext {
@@ -56,15 +70,35 @@
                 display: block;
                 font-weight: 700;
                 margin-bottom: $mb-mobile;
+
+                @include respond-to(large) {
+                    margin-bottom: $mb-tablet;
+                }
             }
 
             &__old {
                 text-decoration: line-through;
                 font-size: $font-sm;
+
+                @include respond-to(medium) {
+                    font-size: 20px;
+                }
+
+                @include respond-to(large) {
+                    font-size: 25px;
+                }
             }
 
             &__new {
                 font-size: 16px;
+
+                @include respond-to(medium) {
+                    font-size: 30px;
+                }
+
+                @include respond-to(large) {
+                    font-size: 34px;
+                }
             }
         }
     }
@@ -72,5 +106,15 @@
     &__paragraph {
         font-size: 12px;
         margin-bottom: $mb-mobile;
+
+        @include respond-to(medium) {
+            margin-bottom: $mb-tablet;
+            font-size: 13px;
+        }
+
+        @include respond-to(large) {
+            margin-bottom: $mb-desktop;
+            font-size: 16px;
+        }
     }
 }

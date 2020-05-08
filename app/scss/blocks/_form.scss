@@ -7,6 +7,10 @@
         margin-bottom: $mb-tablet;
     }
 
+    @include respond-to(medium) {
+        margin-bottom: $mb-desktop;
+    }
+
     
     &__input {
         width: 100%;

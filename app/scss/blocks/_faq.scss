@@ -7,6 +7,16 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        @include respond-to(medium) {
+            padding: 20px 35px;
+            margin-bottom: $mb-tablet;
+        }
+
+        @include respond-to(large) {
+            padding: 35px 50px;
+            margin-bottom: $mb-desktop;
+        }
     }
 
     &__subtitle {

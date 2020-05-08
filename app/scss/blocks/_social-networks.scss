@@ -6,12 +6,29 @@
         
         &+& {
             margin-left: 10px;
+
+            
+            @include respond-to(medium) {
+                margin-left: 20px;
+            }
+
+            @include respond-to(x-large) {
+                margin-left: 40px;
+            }
         }
 
         &_vertical {
             &+& {
                 margin-left: 0;
                 margin-top: 10px;
+
+                @include respond-to(medium) {
+                    margin-top: 20px;
+                }
+
+                @include respond-to(x-large) {
+                    margin-top: 30px;
+                }
             }
         }
     }
@@ -20,6 +37,7 @@
     &__icon {
         width: 28px;
         height: 28px;
+        transform: perspective(1px) translateZ(0);
 
         &_white {
             fill: $white;
@@ -27,7 +45,19 @@
 
         &_small {
             width: 18px;
-        height: 18px;
+            height: 18px;
+
+            @include respond-to(medium) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        &:hover {
+            animation-name: skew;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
         }
     }
 
