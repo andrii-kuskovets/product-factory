@@ -65,7 +65,7 @@
                     left: -18px
                 }
 
-                @include respond-to(medium) {
+                @include respond-to(large) {
                     padding-left: -23px;
                 }
             }
